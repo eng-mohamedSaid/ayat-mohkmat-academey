@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "logo_alt": "Ayat Muhkamat Academy Logo",
+    "academy_name": "Ayat Muhkamat",
+    "link_services": "Services",
+    "link_about": "About",
+    "link_faq": "FAQ",
+    "cta": "Book Free",
+    "lang_toggle": "ع"
+  },
+  "hero": {
+    "badge": "✨ Your First Session Is Completely Free",
+    "headline_main": "Learn or Teach Your Children the Quran with Mastery",
+    "headline_sub": "With Ayat Muhkamat Quran Learning Academy",
+    "sheikh_line": "Under the supervision of Sheikh Islam Sobhi Al-Eisawi",
+    "feature_hifz": "Quran Memorization",
+    "feature_tilawa": "Recitation Correction",
+    "feature_tajweed": "Tajweed Rules",
+    "feature_ijaza": "Ijazah with Connected Chain",
+    "cta_primary": "Book Your Free Session Now",
+    "cta_secondary": "Learn about our teaching method first ↓"
+  },
+  "problem": {
+    "section_label": "Are You Facing These Challenges?",
+    "intro": "Many people want to learn the Quran but face real obstacles that hold them back.",
+    "card1_title": "Can't find a qualified local sheikh",
+    "card1_body": "No qualified teacher available nearby or in their country.",
+    "card2_title": "Hard to correct recitation without an expert",
+    "card2_body": "Without a specialist it is difficult to identify and fix errors.",
+    "card3_title": "No consistent memorization follow-up",
+    "card3_body": "Memorization without review is quickly forgotten.",
+    "card4_title": "Limited time due to work or study",
+    "card4_body": "Fixed schedules do not fit every person's circumstances.",
+    "bridge": "That's exactly why we built Ayat Muhkamat Academy — to be your easiest path to learning the Quran from anywhere in the world."
+  },
+  "solution": {
+    "headline": "The Solution with Ayat Muhkamat Academy",
+    "subtitle": "A complete Quran learning program — structured, easy, and accessible through:",
+    "item1": "One-on-one live sessions with the teacher",
+    "item2": "A memorization plan tailored to your exact level",
+    "item3": "Continuous weekly progress tracking",
+    "item4": "Precise recitation correction and Tajweed rules",
+    "item5": "Practical Tajweed application during recitation",
+    "closing": "All of this from the comfort of your home — no travel, no wasted time."
+  },
+  "services": {
+    "headline": "What Do We Offer?",
+    "card1_title": "Quran Memorization",
+    "card1_body": "A structured program for memorizing the Quran with continuous tracking and precise revision tailored to each student's level.",
+    "card2_title": "Recitation Correction",
+    "card2_body": "Learn correct Quranic recitation and fix pronunciation errors, articulation points, and sound quality under direct supervision.",
+    "card3_title": "Tajweed Rules",
+    "card3_body": "Clear, practical explanation of all Tajweed rules with direct application during recitation to reinforce learning.",
+    "card4_title": "Ijazah with Connected Chain",
+    "card4_body": "Opportunity to receive a formal Ijazah in the Quran after mastering recitation and completing a full khatm with the sheikh — with a chain connected to the Prophet ﷺ."
+  },
+  "why_us": {
+    "headline": "Why Choose Ayat Muhkamat Academy?",
+    "item1": "One-on-one sessions for full student focus",
+    "item2": "Teaching suitable for all ages without exception",
+    "item3": "Teachers specialized in Quran and its sciences",
+    "item4": "Continuous weekly follow-up on memorization and recitation",
+    "item5": "Clear, organized curriculum that grows with the student",
+    "item6": "Opportunity to obtain Ijazah with connected chain"
+  },
+  "age_groups": {
+    "headline": "The Academy Welcomes All Ages",
+    "subtitle": "Every student receives an individual learning plan tailored to their level and pace.",
+    "card1_title": "Children",
+    "card1_age": "Ages 5 and up",
+    "card1_body": "We start children from scratch in a fun, age-appropriate way that builds a genuine love for the Quran.",
+    "card1_badge": "Beginner-friendly",
+    "card2_title": "Youth & Students",
+    "card2_age": "Ages 13 and up",
+    "card2_body": "A flexible program suited for those busy with school or work, with an intensive memorization plan.",
+    "card2_badge": "Intensive",
+    "card3_title": "Seniors",
+    "card3_age": "No age limit",
+    "card3_body": "With patience and care, we help you complete what you started and finish the Book of Allah at any stage of life.",
+    "card3_badge": "Patient & caring"
+  },
+  "how_it_works": {
+    "headline": "Start Your Quran Journey in Just 3 Steps",
+    "step1_title": "Book Your Free Trial Session",
+    "step1_body": "Send us a WhatsApp message and pick a time that works for you from available slots.",
+    "step2_title": "We Assess Your Recitation or Memorization Level",
+    "step2_body": "In the first session, the sheikh listens to you and determines the right starting point for your journey.",
+    "step3_title": "We Begin Your Personalized Program",
+    "step3_body": "Your regular sessions begin with a clear plan and continuous follow-up until you reach your goal."
+  },
+  "free_session": {
+    "headline": "Try Before You Commit — First Session Is Completely Free",
+    "body": "We offer you a fully free trial session to discover our teaching method and assess your level — with no commitment or conditions.",
+    "badge": "✨ No commitment required",
+    "cta": "Book the Free Session Now"
+  },
+  "testimonials": {
+    "headline": "What Our Students Say",
+    "t1_name": "Um Ahmad",
+    "t1_role": "Mother of three",
+    "t1_quote": "My son started from scratch and memorized the entire Juz Amma in 6 months. The follow-up with the sheikh is outstanding.",
+    "t1_location": "UAE",
+    "t2_name": "Mohamed K.",
+    "t2_role": "Engineer",
+    "t2_quote": "I used to be embarrassed to read in front of anyone. Now I read confidently and know the Tajweed rules.",
+    "t2_location": "Germany",
+    "t3_name": "Fatima S.",
+    "t3_role": "Teacher",
+    "t3_quote": "I received my Ijazah with a connected chain after a year and a half. A lifelong dream fulfilled.",
+    "t3_location": "United Kingdom"
+  },
+  "faq": {
+    "headline": "Frequently Asked Questions",
+    "q1": "Are sessions individual or group?",
+    "a1": "Yes, all sessions are one-on-one to ensure maximum focus and the best possible follow-up for every student.",
+    "q2": "Can children enroll?",
+    "a2": "Yes, we welcome students from age 5 and up, with a curriculum specifically designed for each age group.",
+    "q3": "Are sessions online only?",
+    "a3": "Yes, all sessions are conducted online, allowing you to learn from anywhere in the world.",
+    "q4": "Is there a level assessment?",
+    "a4": "Yes, every student's level is assessed during the first free session before the program begins.",
+    "q5": "Is it possible to obtain an Ijazah?",
+    "a5": "Yes, after mastering recitation and completing a full khatm with the sheikh, you can receive an Ijazah with a connected chain.",
+    "q6": "How many sessions per week?",
+    "a6": "The sheikh determines the appropriate number of sessions based on each student's program, level, and goal."
+  },
+  "cta": {
+    "headline": "Don't Delay Learning the Quran",
+    "sub": "Start today your journey with the Book of Allah and book your free session now.",
+    "feature1": "Learn the Quran with Mastery",
+    "feature2": "Correct Your Recitation",
+    "feature3": "Memorize the Book of Allah",
+    "badge": "✨ First Session Free — No Commitment Required",
+    "cta_btn": "Book Your Free Session Now"
+  },
+  "footer": {
+    "tagline": "A specialized Quran academy under the supervision of Sheikh Islam Sobhi Al-Eisawi",
+    "links_heading": "Quick Links",
+    "link_services": "Services",
+    "link_about": "About",
+    "link_how": "How It Works",
+    "link_faq": "FAQ",
+    "link_book": "Book Now",
+    "contact_heading": "Contact Us",
+    "whatsapp_label": "WhatsApp",
+    "email_label": "Email",
+    "copyright": "© 2026 Ayat Muhkamat Academy. All rights reserved."
+  }
+}
