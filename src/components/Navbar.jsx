@@ -24,6 +24,29 @@ const Navbar = () => {
     localStorage.setItem('ayat_lang', newLang)
     document.documentElement.lang = newLang
     document.documentElement.dir = newLang === 'ar' ? 'rtl' : 'ltr'
+    
+    const currentPath = window.location.pathname
+    let newPath
+    if (newLang === 'en') {
+      if (currentPath === '/') {
+        newPath = '/en'
+      } else if (currentPath === '/index.html') {
+        newPath = '/en'
+      } else if (currentPath.startsWith('/services') || currentPath.startsWith('/about') || currentPath.startsWith('/faq')) {
+        newPath = '/en' + currentPath
+      } else {
+        newPath = '/en'
+      }
+    } else {
+      if (currentPath === '/en' || currentPath.startsWith('/en/')) {
+        newPath = currentPath.replace('/en', '') || '/'
+      } else if (currentPath.startsWith('/en/services') || currentPath.startsWith('/en/about') || currentPath.startsWith('/en/faq')) {
+        newPath = currentPath.replace('/en', '') || '/'
+      } else {
+        newPath = '/'
+      }
+    }
+    window.location.href = newPath || '/'
   }
 
   const scrollToSection = (id) => {

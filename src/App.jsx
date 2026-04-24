@@ -18,10 +18,14 @@ function App() {
   const { i18n } = useTranslation()
 
   useEffect(() => {
-    const savedLang = localStorage.getItem('ayat_lang') || 'ar'
-    i18n.changeLanguage(savedLang)
-    document.documentElement.lang = savedLang
-    document.documentElement.dir = savedLang === 'ar' ? 'rtl' : 'ltr'
+    const path = window.location.pathname
+    let lang = 'ar'
+    if (path === '/en' || path.startsWith('/en/')) lang = 'en'
+    else lang = localStorage.getItem('ayat_lang') || 'ar'
+    
+    i18n.changeLanguage(lang)
+    document.documentElement.lang = lang
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr'
   }, [i18n])
 
   return (
