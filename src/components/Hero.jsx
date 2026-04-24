@@ -41,13 +41,13 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          <motion.div variants={containerVariants} initial="hidden" animate="visible" className="space-y-5 md:space-y-9 text-center md:text-right">
+          <motion.div variants={containerVariants} initial="hidden" animate="visible" className="max-w-2xl space-y-5 md:space-y-9 text-center md:text-start">
 
             <motion.h1 variants={itemVariants} className="font-display text-4xl md:text-6xl text-forest-950 leading-10">
               {t('hero.headline_main')}
             </motion.h1>
 
-            <motion.p variants={itemVariants} className="font-body text-xl md:text-2xl text-forest-700">
+            <motion.p variants={itemVariants} className="font-body text-xl md:text-2xl text-forest-700 max-w-xl">
               {t('hero.headline_sub')}
             </motion.p>
 

@@ -1,11 +1,9 @@
 import { useTranslation } from 'react-i18next'
-import { MessageCircle, Mail } from 'lucide-react'
-import { WhatsAppNumber } from '../constants'
+import { MessageCircle, Facebook } from 'lucide-react'
+import { WhatsAppNumber, WhatsAppNumberFormatted, FacebookPage } from '../constants'
 
 const Footer = () => {
   const { t } = useTranslation()
-
-  const Email = 'el.eslam@gmail.com'
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id)
@@ -52,11 +50,11 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <a href={`https://wa.me/${WhatsAppNumber}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-body text-ink-300 hover:text-gold-400 transition-colors">
                 <MessageCircle size={18} className="text-gold-400" />
-                <span>{t('footer.whatsapp_label')}: {WhatsAppNumber}</span>
+                <span>{t('footer.whatsapp_label')}: {WhatsAppNumberFormatted}</span>
               </a>
-              <a href={`mailto:${Email}`} className="flex items-center gap-2 font-body text-ink-300 hover:text-gold-400 transition-colors">
-                <Mail size={18} className="text-gold-400" />
-                <span>{t('footer.email_label')}: {Email}</span>
+              <a href={FacebookPage} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-body text-ink-300 hover:text-gold-400 transition-colors">
+                <Facebook size={18} className="text-gold-400" />
+                <span>{t('footer.facebook_label')}</span>
               </a>
             </div>
           </div>

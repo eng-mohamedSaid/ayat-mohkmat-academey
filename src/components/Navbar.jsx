@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Globe } from 'lucide-react'
 import { getWhatsAppLink } from '../constants'
 
 const Navbar = () => {
@@ -54,22 +54,24 @@ const Navbar = () => {
                 {link.label}
               </button>
             ))}
-            <button onClick={toggleLanguage} className="text-forest-950 hover:text-gold-500 transition-colors font-body font-medium">
-              {t('nav.lang_toggle')}
-            </button>
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="bg-gold-400 text-forest-950 hover:bg-gold-300 px-5 py-2.5 rounded-full font-body font-semibold transition-colors">
               {t('nav.cta')}
             </a>
           </div>
 
-         {isMobileMenuOpen ?
-          <button onClick={() => setIsMobileMenuOpen(false)} className="text-forest-950">
+{isMobileMenuOpen ?
+            <button onClick={() => setIsMobileMenuOpen(false)} className="text-forest-950">
               <X size={28} />
-          </button>
-          :
-          <button className="md:hidden text-forest-950" onClick={() => setIsMobileMenuOpen(true)}>
-            <Menu size={28} />
-          </button>
+            </button>
+            :
+            <div className="flex items-center gap-3">
+              <button onClick={toggleLanguage} className="text-forest-950 hover:text-gold-500 transition-colors">
+                <Globe size={24} />
+              </button>
+              <button className="md:hidden text-forest-950" onClick={() => setIsMobileMenuOpen(true)}>
+                <Menu size={28} />
+              </button>
+            </div>
           }
         </div>
       </div>
@@ -81,13 +83,9 @@ const Navbar = () => {
                   {link.label}
                 </button>
               ))}
-              <button onClick={toggleLanguage} className="text-forest-950 text-xl font-body font-medium hover:text-gold-500 transition-colors">
-                {t('nav.lang_toggle')}
-              </button>
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="bg-gold-400 text-forest-950 px-8 py-3 rounded-full font-body font-semibold mt-4">
                 {t('nav.cta')}
               </a>
-            {/* </div> */}
           </div>
       )}
     </nav>

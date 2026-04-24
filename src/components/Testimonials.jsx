@@ -178,18 +178,18 @@ const Testimonials = () => {
           {/* Navigation Buttons */}
           <div className="flex gap-3 justify-center mt-8">
             <button
-              onClick={handlePrevious}
-              aria-label="السابق"
-              className="p-3 rounded-full bg-white border-2 border-gold-400 text-gold-600 hover:bg-gold-50 transition-all duration-300 hover:border-gold-600 active:scale-95"
-            >
-              <ChevronLeft size={24} />
-            </button>
-            <button
               onClick={handleNext}
               aria-label="التالي"
               className="p-3 rounded-full bg-white border-2 border-gold-400 text-gold-600 hover:bg-gold-50 transition-all duration-300 hover:border-gold-600 active:scale-95"
             >
               <ChevronRight size={24} />
+            </button>
+            <button
+              onClick={handlePrevious}
+              aria-label="السابق"
+              className="p-3 rounded-full bg-white border-2 border-gold-400 text-gold-600 hover:bg-gold-50 transition-all duration-300 hover:border-gold-600 active:scale-95"
+            >
+              <ChevronLeft size={24} />
             </button>
           </div>
         </div>
