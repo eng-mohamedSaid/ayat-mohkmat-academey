@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { Star, ChevronRight, ChevronLeft } from 'lucide-react'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -10,6 +11,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 const Testimonials = () => {
+  const { t, i18n } = useTranslation()
   const swiperRef = useRef(null)
 
   const testimonials = [
@@ -84,10 +86,10 @@ const Testimonials = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-ink-800 mb-4">
-            آراء طالباتنا وأمهاتنا
+            {t('testimonials.headline')}
           </h2>
           <p className="max-w-2xl mx-auto font-body text-lg text-ink-600">
-            تجارب صادقة وحقيقية من طلبة وأسر استفادوا من برامج أكاديمية آيات محكمات
+            {t('testimonials.subtitle')}
           </p>
         </motion.div>
 
@@ -122,11 +124,11 @@ const Testimonials = () => {
             }}
             a11y={{
               enabled: true,
-              prevSlideMessage: 'الشهادة السابقة',
-              nextSlideMessage: 'الشهادة التالية',
+              prevSlideMessage: i18n.language === 'ar' ? 'الشهادة السابقة' : 'Previous testimonial',
+              nextSlideMessage: i18n.language === 'ar' ? 'الشهادة التالية' : 'Next testimonial',
             }}
             className="pb-16"
-            dir="rtl"
+            dir='rtl'
           >
             {testimonials.map((testimonial) => (
               <SwiperSlide key={testimonial.id} className="h-auto">
@@ -137,7 +139,6 @@ const Testimonials = () => {
                   transition={{ duration: 0.5 }}
                   className="bg-white rounded-2xl p-8 shadow-card border border-parchment-300 h-full flex flex-col hover:shadow-lg transition-shadow duration-300"
                 >
-                  {/* Rating Stars */}
                   <div className="flex gap-1 mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star
@@ -179,17 +180,17 @@ const Testimonials = () => {
           <div className="flex gap-3 justify-center mt-8">
             <button
               onClick={handleNext}
-              aria-label="التالي"
+              aria-label={i18n.language === 'ar' ? 'التالي' : 'Next'}
               className="p-3 rounded-full bg-white border-2 border-gold-400 text-gold-600 hover:bg-gold-50 transition-all duration-300 hover:border-gold-600 active:scale-95"
             >
-              <ChevronRight size={24} />
+              <ChevronRight size={24} className={i18n.language === 'en' ? 'rotate-180' : ''} />
             </button>
             <button
               onClick={handlePrevious}
-              aria-label="السابق"
+              aria-label={i18n.language === 'ar' ? 'السابق' : 'Previous'}
               className="p-3 rounded-full bg-white border-2 border-gold-400 text-gold-600 hover:bg-gold-50 transition-all duration-300 hover:border-gold-600 active:scale-95"
             >
-              <ChevronLeft size={24} />
+              <ChevronLeft size={24} className={i18n.language === 'en' ? 'rotate-180' : ''} />
             </button>
           </div>
         </div>

@@ -25,7 +25,6 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src="/assets/images/logo-ayat-letters.png" alt={t('nav.logo_alt')} className="h-10 w-10 object-contain" />
               <span className="font-display text-xl text-gold-400">{t('nav.academy_name')}</span>
             </div>
             <p className="font-body text-ink-300">{t('footer.tagline')}</p>
@@ -35,7 +34,7 @@ const Footer = () => {
             <h4 className="font-body font-semibold text-white mb-4">{t('footer.links_heading')}</h4>
             <div className="flex flex-col gap-3">
               {quickLinks.map((link) => (
-                <button key={link.key} onClick={() => scrollToSection(link.key)} className="font-body text-ink-300 hover:text-gold-400 transition-colors text-right">
+                <button key={link.key} onClick={() => scrollToSection(link.key)} className="font-body text-ink-300 hover:text-gold-400 transition-colors text-start">
                   {link.label}
                 </button>
               ))}
@@ -50,7 +49,7 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <a href={`https://wa.me/${WhatsAppNumber}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-body text-ink-300 hover:text-gold-400 transition-colors">
                 <MessageCircle size={18} className="text-gold-400" />
-                <span>{t('footer.whatsapp_label')}: {WhatsAppNumberFormatted}</span>
+                <span>{t('footer.whatsapp_label')}: <span dir="ltr">{WhatsAppNumberFormatted}</span></span>
               </a>
               <a href={FacebookPage} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-body text-ink-300 hover:text-gold-400 transition-colors">
                 <Facebook size={18} className="text-gold-400" />
