@@ -1,0 +1,20 @@
+{
+  "name": "أكاديمية آيات محكمات | Ayat Muhkumat Academy",
+  "short_name": "آيات محكمات",
+  "description": "أكاديمية متخصصة في تعليم القرآن الكريم والتجويد والإجازة أونلاين للبنات والنساء بالعالم العربي | Online Quran Academy for Women",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#2c4a3e",
+  "background_color": "#2c4a3e",
+  "display": "standalone"
+}

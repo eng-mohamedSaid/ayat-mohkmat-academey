@@ -1,15 +1,12 @@
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
 import { BookOpen, Mic, GraduationCap } from 'lucide-react'
+import { getWhatsAppLink } from '../constants'
 
 const FinalCTA = () => {
   const { t, i18n } = useTranslation()
 
-  const WhatsAppNumber = '+966554875264'
-  const message = encodeURIComponent(i18n.language === 'ar'
-    ? 'مرحباً، أنا مهتم بالتسجيل في أكاديمية آيات محكمات. أرجو التواصل معي لحجز الحصة التجريبية المجانية.'
-    : 'Hello, I\'m interested in enrolling at Ayat Muhkamat Academy. Please contact me to book my free trial session.')
-  const whatsappLink = `https://wa.me/${WhatsAppNumber}?text=${message}`
+  const whatsappLink = getWhatsAppLink(i18n.language)
 
   const features = [
     { icon: BookOpen, text: 'cta.feature1' },

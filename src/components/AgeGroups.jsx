@@ -5,9 +5,9 @@ const AgeGroups = () => {
   const { t } = useTranslation()
 
   const groups = [
-    { icon: '👦', title: 'age_groups.card1_title', age: 'age_groups.card1_age', body: 'age_groups.card1_body', badge: 'age_groups.card1_badge', badgeColor: 'bg-gold-500 text-forest-950' },
-    { icon: '👨', title: 'age_groups.card2_title', age: 'age_groups.card2_age', body: 'age_groups.card2_body', badge: 'age_groups.card2_badge', badgeColor: 'bg-forest-600 text-forest-100' },
-    { icon: '👴', title: 'age_groups.card3_title', age: 'age_groups.card3_age', body: 'age_groups.card3_body', badge: 'age_groups.card3_badge', badgeColor: 'bg-forest-700 text-forest-100' },
+    { title: 'age_groups.card1_title', age: 'age_groups.card1_age', body: 'age_groups.card1_body', badge: 'age_groups.card1_badge', badgeColor: 'bg-gold-500 text-forest-950' },
+    { title: 'age_groups.card2_title', age: 'age_groups.card2_age', body: 'age_groups.card2_body', badge: 'age_groups.card2_badge', badgeColor: 'bg-forest-600 text-forest-100' },
+    { title: 'age_groups.card3_title', age: 'age_groups.card3_age', body: 'age_groups.card3_body', badge: 'age_groups.card3_badge', badgeColor: 'bg-forest-700 text-forest-100' },
   ]
 
   return (
@@ -21,7 +21,6 @@ const AgeGroups = () => {
         <div className="grid md:grid-cols-3 gap-6">
           {groups.map((group, index) => (
             <motion.div key={index} initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: index * 0.1 }} className="bg-white rounded-2xl p-6 shadow-card border border-parchment-300">
-              <div className="text-5xl mb-4">{group.icon}</div>
               <span className={`inline-block ${group.badgeColor} text-sm font-body font-semibold px-3 py-1 rounded-full mb-3`}>
                 {t(group.badge)}
               </span>

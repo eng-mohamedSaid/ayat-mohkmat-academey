@@ -21,17 +21,16 @@ const HowItWorks = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <motion.div key={index} initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: index * 0.1 }} className="text-center">
-              <div className="w-12 h-12 bg-gold-500 text-forest-950 font-bold text-lg flex items-center justify-center rounded-full mx-auto mb-4">
-                {step.number}
-              </div>
               <div className="w-16 h-16 bg-forest-800 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <step.icon size={32} className="text-gold-400" />
               </div>
-              <h3 className="font-display text-xl font-bold text-white mb-3">{t(step.title)}</h3>
+              <div className='flex items-center justify-center gap-2 mb-2'>
+                <div className="w-6 h-6 bg-gold-500 text-forest-950 font-bold text-sm flex items-center justify-center rounded-full">
+                  {step.number}
+                </div>
+                <h3 className="font-display text-xl font-bold text-white">{t(step.title)}</h3>
+              </div>
               <p className="font-body text-forest-100">{t(step.body)}</p>
-              {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-1/2 left-1/2 w-full h-px bg-forest-700 transform -translate-y-1/2"></div>
-              )}
             </motion.div>
           ))}
         </div>

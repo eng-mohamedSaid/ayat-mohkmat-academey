@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next'
 import { MessageCircle, Mail } from 'lucide-react'
+import { WhatsAppNumber } from '../constants'
 
 const Footer = () => {
   const { t } = useTranslation()
 
-  const WhatsAppNumber = '+966554875264'
   const Email = 'el.eslam@gmail.com'
 
   const scrollToSection = (id) => {
@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src="/logo-ayat-letters.png" alt={t('nav.logo_alt')} className="h-10 w-10 object-contain" />
+              <img src="/assets/images/logo-ayat-letters.png" alt={t('nav.logo_alt')} className="h-10 w-10 object-contain" />
               <span className="font-display text-xl text-gold-400">{t('nav.academy_name')}</span>
             </div>
             <p className="font-body text-ink-300">{t('footer.tagline')}</p>
